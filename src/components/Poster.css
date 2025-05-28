@@ -49,7 +49,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 4rem;
+    margin-top: 9rem;
   }
   
   .side-thumbnail {
@@ -124,7 +124,7 @@
   }
   
   .title-bg {
-    background: linear-gradient(135deg, #8b5cf6, #a855f7);
+    background: linear-gradient(135deg, #e879f9 0%, #c084fc 20%, #a855f7 40%, #9333ea 60%, #7c3aed 80%, #6366f1 100%);
     color: #fff;
     padding: 0.5rem 1rem;
     display: inline-block;
@@ -136,7 +136,16 @@
     font-size: 1.1rem;
     line-height: 1.6;
     color: #d1d5db;
+    margin-bottom: 1rem;
+  }
+
+  .poster-date {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #a855f7;
     margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
   
   .desktop-nav-arrows {
@@ -331,7 +340,17 @@
       line-height: 1.6;
       color: #d1d5db;
       text-align: left;
+      margin-bottom: 1rem;
+    }
+
+    .mobile-poster-date {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #a855f7;
       margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-align: center;
     }
   
     .poster-indicators {
@@ -410,6 +429,10 @@
     .mobile-poster-description {
       font-size: 1.1rem;
     }
+
+    .mobile-poster-date {
+      font-size: 1.2rem;
+    }
   
     .mobile-thumbnail {
       width: 70px;
@@ -460,7 +483,11 @@
     }
   
     .mobile-poster-description {
-      font-size: 0.9rem;
+      font-size: 1rem;
+    }
+
+    .mobile-poster-date {
+      font-size: 1rem;
     }
   
     .mobile-nav {

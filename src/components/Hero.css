@@ -59,7 +59,7 @@
 
 .hero__button {
   width: 300px;
-  background: #822ea8;
+  background: linear-gradient(135deg, #e879f9 0%, #c084fc 20%, #a855f7 40%, #9333ea 60%, #7c3aed 80%, #6366f1 100%);
   color: #fff;
   font-weight: 800;
   font-size: 1.15rem;
@@ -216,11 +216,11 @@
     text-align: center;
   }
   .hero__title {
-    font-size: 2.1rem;
+    font-size: 1.6rem;
     margin-bottom: 0.7rem;
   }
   .hero__highlight {
-    font-size: 2.3rem;
+    font-size: 1.6rem;
     display: block;
     margin-bottom: 0.5rem;
   }
@@ -229,8 +229,8 @@
     margin-bottom: 1.2rem;
   }
   .hero__button {
-    width: 100%;
-    font-size: 1.1rem;
+    width: 70%;
+    font-size: 1rem;
     padding: 1rem 0;
     margin-bottom: 15rem;
     margin-top: 0.5rem;

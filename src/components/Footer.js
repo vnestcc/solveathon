@@ -60,7 +60,9 @@ const Footer = () => {
           </div>
 
           <div className="footer-right">
-            <div className="placeholder-box"></div>
+            <div className="solve-a-thon-text">
+              <h2 className="solve-a-thon-title">SOLVE-A-THON</h2>
+            </div>
             <button className="back-to-top" onClick={scrollToTop}>
               Back to top
               <span className="back-to-top-icon">↗</span>

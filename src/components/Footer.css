@@ -69,12 +69,45 @@
   gap: 20px;
 }
 
-.placeholder-box {
+.solve-a-thon-text {
   width: 280px;
   height: 120px;
-  background-color: rgba(200, 200, 200, 0.9);
-  border-radius: 8px;
-  backdrop-filter: blur(10px);
+  background: linear-gradient(135deg, rgba(139, 69, 139, 0.2), rgba(75, 0, 130, 0.3));
+  border: 2px solid rgba(139, 69, 139, 0.4);
+  border-radius: 12px;
+  backdrop-filter: blur(15px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.solve-a-thon-text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+.solve-a-thon-title {
+  font-size: 24px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 0 0 20px rgba(139, 69, 139, 0.6);
+  position: relative;
+  z-index: 1;
 }
 
 .back-to-top {
@@ -176,12 +209,17 @@
     gap: 25px;
   }
   
-  .placeholder-box {
+  .solve-a-thon-text {
     width: 100%;
     max-width: 320px;
     height: 80px;
-    background: linear-gradient(135deg, rgba(139, 69, 139, 0.1), rgba(200, 200, 200, 0.3));
-    border: 1px solid rgba(139, 69, 139, 0.3);
+    background: linear-gradient(135deg, rgba(139, 69, 139, 0.2), rgba(75, 0, 130, 0.3));
+    border: 2px solid rgba(139, 69, 139, 0.4);
+  }
+  
+  .solve-a-thon-title {
+    font-size: 20px;
+    letter-spacing: 1.5px;
   }
   
   .back-to-top {
@@ -230,12 +268,12 @@
   }
   
   .footer-title {
-    font-size: 15px;
+    font-size: 18px;
     margin-bottom: 12px;
   }
   
   .footer-links a {
-    font-size: 13px;
+    font-size: 15px;
     padding: 4px 0;
   }
   
@@ -247,18 +285,23 @@
     gap: 20px;
   }
   
-  .placeholder-box {
+  .solve-a-thon-text {
     height: 60px;
     max-width: 280px;
   }
   
+  .solve-a-thon-title {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  
   .back-to-top {
     padding: 10px 20px;
-    font-size: 12px;
+    font-size: 15px;
   }
   
   .back-to-top-icon {
-    font-size: 12px;
+    font-size: 15px;
   }
   
   .copyright {
@@ -309,9 +352,14 @@
     gap: 15px;
   }
   
-  .placeholder-box {
+  .solve-a-thon-text {
     height: 50px;
     max-width: 250px;
+  }
+  
+  .solve-a-thon-title {
+    font-size: 14px;
+    letter-spacing: 0.5px;
   }
   
   .back-to-top {
