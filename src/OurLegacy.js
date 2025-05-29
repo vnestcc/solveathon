@@ -80,7 +80,7 @@ const OurLegacy = () => {
           </div>
         </section>
 
-        {/* Stats and Winners Section */}
+        {/* Stats and Winners Section - Replaced */}
         <section className="stats-section">
           <div className="year-buttons">
             <button
@@ -97,32 +97,37 @@ const OurLegacy = () => {
             </button>
           </div>
 
-          <div className="stats-container">
-            <div className="stats-grid">
-              <div className="stat-item">
-                <div className="stat-icon">🏆</div>
-                <div className="stat-label">WINNERS</div>
-                <div className="stat-number">3</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-icon">👥</div>
-                <div className="stat-label">PARTICIPANTS</div>
-                <div className="stat-number">150+</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-icon">📝</div>
-                <div className="stat-label">REGISTRATIONS</div>
-                <div className="stat-number">500+</div>
-              </div>
+          <div className="stats-grid">
+            <div className="stat-box">
+              <div className="stat-icon trophy-icon"></div>
+              <div className="stat-label">WINNERS</div>
+              <div className="stat-number">3</div>
             </div>
+            <div className="stat-box">
+              <div className="stat-icon people-icon"></div>
+              <div className="stat-label">PARTICIPANTS</div>
+              <div className="stat-number">350+</div>
+            </div>
+            <div className="stat-box">
+              <div className="stat-icon clipboard-icon"></div>
+              <div className="stat-label">REGISTRATIONS</div>
+              <div className="stat-number">500+</div>
+            </div>
+          </div>
 
+          <div className="winners-section">
+            <div className="timeline">
+              {currentWinners.map((winner, index) => (
+                <div key={index} className="position-circle">
+                  {winner.position}
+                </div>
+              ))}
+            </div>
             <div className="winners-grid">
               {currentWinners.map((winner, index) => (
-                <div key={index} className={`winner-card position-${winner.position.replace(/\D/g, '')}`}>
-                  <div className="position-badge">{winner.position}</div>
-                  <div className="winner-info">
-                    <div className="winner-name">{winner.name}</div>
-                    <div className="team-name">{winner.team}</div>
+                <div key={index} className="winner-box">
+                  <div className="winner-name">
+                    {winner.name}<br />{winner.team}
                   </div>
                 </div>
               ))}
