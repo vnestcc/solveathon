@@ -107,7 +107,7 @@ const PreEventInfo = () => {
                         </div>
                         <div className="photo-item photo-4">
                             <img
-                                src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=300&h=200&fit=crop"
+                                src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=300&h=200&fit=crop"
                                 alt="Tech workspace"
                             />
                             <div className="photo-overlay"></div>
