@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './OurLegacy.css';
 
 // Import local images
@@ -53,7 +54,7 @@ const OurLegacy = () => {
         <nav className="nav">
           <a href="#home">HOME</a>
           <a href="#about">ABOUT US</a>
-          <a href="#events">PRE-EVENTS</a>
+          <Link to="/pre-event-info">PRE-EVENTS</Link>
           <a href="#legacy" className="active">OUR LEGACY</a>
         </nav>
       </header>
