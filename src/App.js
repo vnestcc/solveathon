@@ -7,7 +7,9 @@ import PreEventsSection from './components/PreEventsSection';
 import Poster from './components/Poster';
 import Footer from './components/Footer';
 import PreEventInfo from './components/PreEventInfo';
+import OurLegacy from "./OurLegacy";
 import './App.css';
+
 
 // Main page component
 const MainPage = () => {
@@ -45,6 +47,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/event/:eventId" element={<EventInfoPage />} />
+          <Route path="/our-legacy" element={<OurLegacy />} />
         </Routes>
       </Router>
     </div>

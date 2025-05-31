@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,7 +30,7 @@ const Navbar = () => {
           <a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}>ABOUT US</a>
           <a href="#pre-events" onClick={(e) => { e.preventDefault(); scrollToSection('pre-events'); }}>PRE-EVENTS</a>
           <a href="#posters" onClick={(e) => { e.preventDefault(); scrollToSection('posters'); }}>POSTERS</a>
-          <a href="#legacy" onClick={handleLegacyClick}>OUR LEGACY</a>
+          <Link to={"\our-legacy"}>OUR LEGACY</Link>
         </div>
         <div className="navbar__hamburger" onClick={() => setMenuOpen(!menuOpen)}>
           <span></span>
