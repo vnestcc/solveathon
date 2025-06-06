@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 import PreEventInfo from './components/PreEventInfo';
 import OurLegacy from "./OurLegacy";
 import './App.css';
-import SolveAThon from './components/SolveAThonTabs';
+// import SolveAThon from './components/SolveAThonTabs';
 
 // Main page component
 const MainPage = () => {

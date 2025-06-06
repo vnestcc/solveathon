@@ -12,7 +12,7 @@ const Hero = () => {
         <p className="hero__subtitle">
           Join the annual Solve-a-thon by V-NEST and turn your ideas into startups.
         </p>
-        <a href="https://solveathon.devfolio.co/"  target="_blank" className="hero__button">REGISTER NOW</a>
+        <a href="https://solveathon.devfolio.co/" rel="noreferrer"  target="_blank" className="hero__button">REGISTER NOW</a>
       </div>
       {/* <div className="hero__vertical-border"></div> */}
       <div className="hero__visual">
