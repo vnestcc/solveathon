@@ -24,7 +24,10 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar__container">
-        <div className="navbar__logo">SOLVE-A-THON</div>
+        <div className="navbar__logo">
+          <img src={process.env.PUBLIC_URL + '/solveathon.webp'} alt="Solve-a-thon Logo" className="navbar__logo-img" />
+          <span className="navbar__logo-text">SOLVE-A-THON</span>
+        </div>
         <div className={`navbar__links ${menuOpen ? 'navbar__links--open' : ''}`}>
           <a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>HOME</a>
           <a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}>ABOUT US</a>
