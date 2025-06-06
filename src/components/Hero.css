@@ -293,16 +293,17 @@
   }
   .hero__image {
     max-width: 220px;
-    min-width: 120px;
-    width: 60vw;
-    margin: 0 auto 0.5rem auto;
+    min-width: 600px;
+    width: 600px;
+    margin: 0 2rem 0.5rem 0rem;
     display: block;
     right: 0;
-    left: 0;
+    left: 110px;
     position: relative;
     z-index: 2;
     top: -30vw;
     box-shadow: 0 8px 32px 0 rgba(0,0,0,0.18);
+    height: 60vw;
   }
   .hero__vertical-border {
     display: none;

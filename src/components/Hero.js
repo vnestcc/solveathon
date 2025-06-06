@@ -12,7 +12,7 @@ const Hero = () => {
         <p className="hero__subtitle">
           Join the annual Solve-a-thon by V-NEST and turn your ideas into startups.
         </p>
-        <a href="https://solveathon.devfolio.co/"  target="_blank" rel="noreferrer" className="hero__button">REGISTER NOW</a>
+        <a href="https://solveathon.devfolio.co/"  target="_blank" className="hero__button">REGISTER NOW</a>
       </div>
       {/* <div className="hero__vertical-border"></div> */}
       <div className="hero__visual">
@@ -21,10 +21,10 @@ const Hero = () => {
           <div className="pattern-rect pattern-rect--2"></div>
           <div className="pattern-rect pattern-rect--3"></div>
         </div>
-        <img src={process.env.PUBLIC_URL + '/ChatGPT Image May 26, 2025, 08_03_54 PM.png'} alt="Graduate Girl" className="hero__image" />
+        <img src={process.env.PUBLIC_URL + '/ChatGPT Image May 26, 2025, 08_03_54 PM.webp'} loading="lazy" alt="Graduate Girl" className="hero__image" />
       </div>
     </section>
   );
 };
 
-export default Hero;
+export default Hero; 

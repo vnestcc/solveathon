@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import './PreEventInfo.css';
 
@@ -37,6 +37,23 @@ const PreEventInfo = () => {
     // Find the event based on the URL parameter
     const event = events.find(e => e.id === eventId) || events[0];
     
+    // Prevent automatic scroll and set natural starting position
+    useEffect(() => {
+        // Clear any stored scroll positions that might interfere
+        sessionStorage.removeItem('preEventScrollPosition');
+        
+        // Set scroll position to natural starting point (beginning of content)
+        const timer = setTimeout(() => {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'instant' // No smooth scrolling, just snap to position
+            });
+        }, 50);
+
+        return () => clearTimeout(timer);
+    }, [eventId]); // Re-run when eventId changes
+
     // Handle back navigation
     const handleBack = () => {
         navigate('/');
@@ -58,7 +75,7 @@ const PreEventInfo = () => {
     return (
         <div className="pre-event-container">
             {/* Back Button */}
-            <div className="back-button" onClick={handleBack}>
+            <div className="back-button1" onClick={handleBack}>
                 <svg className="back-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                     <path d="M19 12H5M12 19l-7-7 7-7" />
                 </svg>

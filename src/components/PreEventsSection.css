@@ -273,8 +273,8 @@
 .pre-events-card .pre-events-btn {
   margin-top: 0.5rem;
   align-self: flex-start;
-  font-size: 1.1rem;
-  padding: 0.9rem 2.5rem;
+  font-size: 0.9rem;
+  padding: 1rem 2.3rem;
   border-radius: 20px;
   font-weight: 800;
   background: linear-gradient(135deg, #fff 0%, #f7e3f2 100%);
